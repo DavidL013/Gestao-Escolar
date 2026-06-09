@@ -177,11 +177,6 @@ cadProf.addEventListener("click", (e) => {
     option.value = professores.length -1;
     option.textContent = novoProf.nome;
     select.appendChild(option);
-    // const selectNota = document.getElementById("selecao-prof-nota");
-    // const optionNota = document.createElement("option");
-    // optionNota.value = professores.length -1;
-    // optionNota.textContent = novoProf.nome;
-    // selectNota.appendChild(optionNota);
     console.log(professores);
     modalProf.close();
     
@@ -353,7 +348,6 @@ class Professor {
 
 class Turma {
     constructor(nome, professor, alunos) {
-        // this.professor = professor;
         this.nome = nome;
         this.alunos = [];
     }
@@ -376,6 +370,3 @@ class Nota {
 };
 
 carregarDados();
-
-
-
